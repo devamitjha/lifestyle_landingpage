@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Abel";
+}
+
+.dFlex, .info header, .info header .logo,
+.info header .search, .video_, .video_ .product_video,
+.video_ .product_details, .video_ .product_video .play_btn, .video_ .product_video .play_btn span, nav .menu.top_nav, nav .menu.bottom_nav, .product_info_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loading {
+  background: #ec4765;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.container {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.bg {
+  background: url(../images/model_4.jpg) center center;
+  background-size: cover;
+}
+
+.info {
+  display: block;
+  width: 40%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: relative;
+}
+
+.info header {
+  width: 100%;
+  height: 80px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Abel";
+}
+
+.info header .logo,
+.info header .search {
+  width: 80px;
+  height: 100%;
+  background-color: #ec4765;
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.info header .search {
+  background: transparent;
+  font-size: 18px;
+}
+
+.info .title {
+  padding: 0 6vw;
+  margin-top: 2vw;
+}
+
+.info .title h1 {
+  font-size: 8vw;
+  color: #fff;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  font-family: "Abril Fatface";
+  letter-spacing: 8px;
+}
+
+.info .title h1 span {
+  display: block;
+  margin-left: 5vw;
+}
+
+.info .title p {
+  font-size: 1vw;
+  font-family: "Abel";
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 2vw;
+  line-height: 1.5;
+}
+
+.info .left_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 6vw;
+  margin-top: 2vw;
+  font-family: "Abel";
+}
+
+.info .left_nav a {
+  color: #ec4765;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+}
+
+.info .left_nav a.active {
+  color: #fff;
+}
+
+.info .left_nav a.active:after {
+  content: "";
+  width: 4vw;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  left: 4vw;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.info .left_nav a + a {
+  margin-top: .8vw;
+}
+
+.video_ {
+  position: absolute;
+  right: 0;
+  bottom: 5vw;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 34vw;
+  height: 10vw;
+}
+
+.video_ .product_video,
+.video_ .product_details {
+  width: 50%;
+  height: 100%;
+  font-family: "Abel";
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.video_ .product_video {
+  position: relative;
+}
+
+.video_ .product_video img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.video_ .product_video .play_btn {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(236, 71, 101, 0.8);
+}
+
+.video_ .product_video .play_btn span {
+  width: 3vw;
+  height: 3vw;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 3vw;
+}
+
+.video_ .product_video .play_btn span .fa {
+  padding-left: 5px;
+}
+
+.video_ .product_details {
+  padding: 0 2vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.video_ .product_details h2 {
+  font-size: 2vw;
+}
+
+.video_ .product_details p {
+  font-size: .85vw;
+}
+
+nav {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 40vh;
+}
+
+nav .menu {
+  width: 100%;
+  height: 100%;
+  padding: 40px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+nav .menu.top_nav {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #ec4765;
+}
+
+nav .menu.top_nav .fa {
+  color: #fff;
+}
+
+nav .menu.bottom_nav {
+  background-color: #fff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 60px 20px;
+}
+
+nav .menu.bottom_nav a {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  text-decoration: none;
+  font-family: "Abel";
+  text-transform: uppercase;
+  color: #ec4765;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.product_info_container {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 20vh;
+  width: 30vw;
+  background-color: rgba(236, 71, 101, 0.4);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  color: #fff;
+  padding: 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.product_info_container article {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Abel";
+}
+
+.product_info_container article h2 {
+  font-size: 30px;
+}
+
+.product_info_container article .a_info {
+  padding-top: 5px;
+  margin-left: 10px;
+}
+
+.product_info_container article .a_info h3 {
+  font-size: 20px;
+}
+
+.product_info_container article .a_info p {
+  font-size: 10px;
+  margin-top: 10px;
+}
+/*# sourceMappingURL=style.css.map */
